@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"href="styles.css"/>
+
+
+    <title>Meu Portifólio</title>
+
+   <style>
+
+*{
+
+margin:0;
+padding: 0;
+outline: 0;
+box-sizing: border-box;
+
+}
+
+body{
+
+font-family: 'Roboto', sans-serif;
+
+}
+
+html{
+ scroll-behavior: smooth;
+
+}
+
+/* inicio header*/
+
+.nav{
+
+    background-color:#181818;
+    height:80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.nav-list{
+
+    display: flex; 
+     align-items: center;
+     list-style: none;
+     margin-right: 28px;
+
+}
+
+
+.nav-list a{
+text-decoration: none;
+color: #DDD;
+padding: 20px;
+
+}
+
+.nav-list a:hover{
+    color:#FFFFFF;
+
+}
+
+/* fim header */
+
+/* inicio do main*/
+.main{
+ width: 100%;
+ background-color: #000;
+ height: calc(100vh - 80px);
+ background-image: url("images/programador.png");
+ display: flex;
+ align-items: center;
+ padding-left: 10%;
+}
+
+.main h1{
+  color: #FFFFFF;
+  font-size:54px;
+
+}
+
+.main p{
+
+  font-size: 24px;
+  font-style: italic;
+  color: #1e96FC;
+  margin-top: 10px;
+  margin-bottom: 35px;
+
+}
+
+.call-to-action{
+
+cursor: pointer;
+background-color: #FFFFFF;
+border:0;
+padding: 14px;
+border-radius: 4px;
+font-size: 18px;
+font-weight: bold;
+transition: 0.9s;
+
+}
+
+
+.call-to-action:hover{
+
+transform: scale(1.1);
+
+
+
+}
+
+
+.main a{
+
+text-decoration:none;
+color: #181818
+
+}
+
+/* fim da main */
+
+/* inicio about*/
+
+.about{
+background-color: #FFFFFF;
+width: 100%;
+padding-left:10%;
+padding-right: 10%;
+padding-top: 80px;
+padding-bottom: 80px;
+
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.about div{
+
+    max-width: 50%;
+    padding-right: 40px;
+
+}
+
+.about img{
+
+max-width: 450px;
+border-radius: 8px; 
+
+}
+
+.about div h2{
+font-size: 32px;
+margin-bottom: 14px;
+
+}
+/*fim do about*/
+
+/*inicio do project*/
+
+.projects{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.projects h2{
+
+    font-size: 32px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+
+}
+
+.projects p{
+margin-bottom: 40px;
+font-style: italic;
+
+
+}
+
+.project-list{
+width: 100%;
+margin-bottom: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.projects img{
+
+width:20%;
+margin-left: 0.5%;
+margin-right: 0.5%;
+opacity: 0.8;
+transition: 0.9s;
+}
+
+.ptojets img:hover{
+opacity: 1;
+
+}
+
+.action{
+background-color: #181818;
+border: 0;
+padding: 12px 28px;
+border-radius: 4px;
+font-size: 18px;
+color: #FFFFFF;
+margin-top: 18px;
+cursor: pointer;
+
+}
+
+/*fim projects*/
+
+/*inicio rodape*/
+
+footer{
+   width: 100%;
+   background-color: #181818;
+   padding: 60px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color:#FFFFFF;
+
+}
+
+  footer a{
+   text-decoration: none;
+   color:#FFFFFF;
+
+  }
+
+  footer p{
+   margin-left: 12px;
+   color: #1e96FC;
+   
+  }
+
+/*fim do rodape*/
+
+
+/*responsividade*/
+
+@media (max-width: 1050px){
+
+/* inicio main*/
+
+.main h1{
+
+    font-size: 45px;;
+}
+.main p{
+
+      font-size: 18px;
+}
+.main{
+
+  background-size: cover;
+}
+/* fim main*/
+/* inicio do sobre*/
+
+.about{
+  flex-direction: column;
+  padding-top: 80px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.about div{
+
+max-width: 80%;
+
+}
+.about div h2{
+
+    font-size: 45px;
+}
+.about img{
+ width: 80%;
+ margin-top: 30px;
+
+}
+
+/*fim do sobre*/
+
+/*inicio projetos*/
+
+.projects img{
+width:27.5%;
+}
+
+
+/*fim projetos*/
+
+/*inicio rodape*/
+footer{
+
+flex-direction: column;
+
+}
+
+footer h3{
+
+font-size: 20px;
+margin-bottom: 8px;
+
+}
+
+footer p{
+ margin: 0;
+
+}
+
+/*fim do footer*/
+
+}
+
+   </style>
+
+
+
+    </head>
+    <body>
+
+     <nav class="nav">
+
+      <ul class="nav-list">
+
+      <li>
+       <a href="#home">Home</a>
+      </li>
+      <li>
+
+        <a href="#sobre">Sobre</a>
+      </li>
+
+      <li>
+        <a href="#projetos">Projetos</a>
+      </li>
+      
+      </ul>
+     </nav>
+
+
+
+     <!--inicio main-->
+      <section id="home" class="main">
+      <div>
+      <h1>Olá,<br>Seja bem vindo!</h1>
+      <p>Crie soluções para seu projeto.</p>
+
+       <a href="#">
+        <button class="call-to-action">
+
+        Veja meus projetos 👇
+
+        </button>  
+
+       </a>
+
+      </div>
+
+      </section>
+
+      <!--fim main-->
+
+      <!--inicio sobre-->
+      <section id="sobre" class="about">
+
+      <div>
+
+      <h2>Sobre</h2>
+       <p>
+        Desenvolvo soluções na criação de aplicativos iOs e Android para os mais variados tipos de segmentos. 
+        <br><br>
+        Trabalho com as melhores linguagens e tecnologias no desenvolvimento de sites e portais. 
+       </p>
+      </div>
+      <img src="images/foto-pc1.png" alt="Foto trabalhando">
+
+      </section>
+      <!--fim sobre-->
+       <!--inicio projetos-->
+
+       <section id="projetos"class ="projects">
+        <h2>Meus projetos</h2>
+        <p>Conheça meus últimos projetos</p>
+
+
+     <div class="project-list">
+        <img src="images/projeto1.png" alt="Foto do projeto 1">
+        <img src="images/projeto2.png" alt="Foto do projeto 2">
+        <img src="images/projeto3.png" alt="Foto do projeto 3">
+        
+     </div>
+
+       <div class="project-list">
+        <img src="images/projeto3.png" alt="Foto do projeto 3">
+        <img src="images/projeto2.png" alt="Foto do projeto 2">
+        <img src="images/projeto1.png" alt="Foto do projeto 1">
+
+       </div>
+       <button class="action">Faça um orçamento</button>
+
+       </button>
+       </section>
+      
+       <!--fim projetos-->
+
+       <!--inicio do rodape-->
+
+
+       <footer>
+        <h3>
+
+       <a href="#">Desenvolvedora mobile. </a>
+        </h3>
+         <p>Todos os direitos reservados!</p>
+       </footer>
+
+      <!--fim do rodape-->
+
+    </body>
+    </html>
+     
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
